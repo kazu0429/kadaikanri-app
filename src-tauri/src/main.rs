@@ -48,7 +48,7 @@ impl Card {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CardPos{
-    #[serde(rename = "columunid")]
+    #[serde(rename = "columunId")]
     column_id:i64,
     position:i64,
 }
