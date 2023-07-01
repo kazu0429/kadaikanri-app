@@ -1,10 +1,7 @@
 // @ts-ignore
 import Board from '@asseinfo/react-kanban';
 import '@asseinfo/react-kanban/dist/styles.css';
-import "./App.css";
-
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
 import { invoke } from "@tauri-apps/api/tauri";
 
 type TBoard = {
@@ -79,6 +76,7 @@ function App() {
 
   return (
     <>
+      <h1>課題管理アプリ</h1>
       {board != null &&
         <Board
           // ボードの初期データ
